@@ -9,6 +9,9 @@ public:
     GSDump();
 
     void setData(std::vector<char>buf);
+
+private:
+    std::vector<char> state;
 };
 
 #endif // GSDUMP_H

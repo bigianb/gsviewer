@@ -42,10 +42,7 @@ void MainWindow::on_actionOpen_triggered()
         auto buf = std::vector<char>(fileLen);
         int bytesRead = in.readRawData(buf.data(), fileLen);
 
-        std::cout << "read " << bytesRead << " bytes" << std::endl;
-
         gsdump->setData(buf);
-
     }
 }
 
